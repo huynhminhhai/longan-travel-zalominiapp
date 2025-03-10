@@ -27,6 +27,15 @@ import setting from './gear.png'
 import research from './research.png'
 import statistics from './statistics.png'
 import map from './map.png'
+import event from './calendar.png'
+import hotel from './hotel.png'
+import more from './more.png'
+import restaurant from './restaurant.png'
+import salad from './salad.png'
+import tourGuide from './tour-guide.png'
+import destination from './destination.png'
+import landmark from './landmark.png'
+import island from './island.png'
 
 const images = {
     logo,
@@ -57,7 +66,16 @@ const images = {
     setting,
     research,
     statistics,
-    map
+    map,
+    event,
+    hotel,
+    more,
+    salad,
+    restaurant,
+    tourGuide,
+    destination,
+    landmark,
+    island
 }
 
 export default images

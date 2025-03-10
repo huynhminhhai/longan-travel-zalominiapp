@@ -5,41 +5,35 @@ import { Box, useNavigate } from "zmp-ui"
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 
-export const newsData = [
+export const eventData = [
     {
-        title: 'Trồng khoai mì ruột vàng mang lại thu nhập cao',
-        category: 'Xã hội',
+        title: 'Du lịch Long An nhiều chương trình hấp dẫn phục vụ 𝐓𝐮𝐚̂̀𝐧 𝐕𝐚̆𝐧 𝐡𝐨́𝐚 – 𝐓𝐡𝐞̂̉ 𝐭𝐡𝐚𝐨 – 𝐃𝐮 𝐥𝐢̣𝐜𝐡 𝐭𝐢̉𝐧𝐡 𝐥𝐚̂̀𝐧 𝐭𝐡𝐮̛́ 𝟐 𝐧𝐚̆𝐦 𝟐𝟎𝟐𝟒 (28/11 - 04/12/2024) ',
+        category: 'Sự kiện',
         publisedDate: '22/02/2025',
-        imgUrl: 'https://www.baolongan.vn/image/news/2025/20250228/images/62_766_img-1316.jpg'
+        imgUrl: 'https://scontent.iocvnpt.com/resources/portal//Images/LAN/toanlm.lan/2024/z6064936543707_e78248ae6d5959b5ba6ba1a560e91a61_916470942.jpg'
     },
     {
-        title: 'Du lịch Long An - Thêm nhiều hứa hẹn',
-        category: 'Văn hóa - Giải trí',
+        title: 'Tuần Văn hóa – Thể thao – Du lịch tỉnh Long An',
+        category: 'Sự kiện',
         publisedDate: '04/03/2025',
-        imgUrl: 'https://www.baolongan.vn/image/news/2025/20250203/images/19_2025-37_52534448_475437088-1149167247217145-3869741133198436879-n.jpg'
+        imgUrl: 'https://scontent.iocvnpt.com/resources/portal//Images/LAN/toanlm/2024/z6055808802997_04702604dc1650e5cde5d49bd5c45781_895515248.jpg'
     },
     {
-        title: 'Về xứ đồng bưng thưởng thức món ngon dân dã',
-        category: 'Xã hội',
+        title: 'KHÁT VỌNG SÔNG VÀM 2024 - LONG AN ĐÃ SẴN SÀNG',
+        category: 'Sự kiện',
         publisedDate: '22/02/2025',
-        imgUrl: 'https://www.baolongan.vn/image/news/2025/20250226/images/2_2025-36_94342599_ngu-o-i-da-n-di-xu-c-ca-lia-thia-o-ca-c-ca-nh-do-ng-nga-p-nu-o-c.jpg'
-    },
-    {
-        title: 'Phát huy hiệu quả các mô hình bảo đảm an ninh, trật tự',
-        category: 'Xã hội',
-        publisedDate: '22/02/2025',
-        imgUrl: 'https://www.baolongan.vn/image/news/2025/20250303/thumbnail/510x286/734_1741003486.jpeg'
+        imgUrl: 'https://scontent.iocvnpt.com/resources/portal//Images/LAN/toanlm/2024/467404204_122100529274628028_4299896698637172696_n_100185913.jpg'
     },
 ]
 
-const NewsSection: React.FC = () => {
+const EventSection: React.FC = () => {
 
     const navigate = useNavigate()
 
     return (
         <Box py={4} pl={4} className="news-section">
             <Box pr={4}>
-                <TitleSection title="Tin tức mới nhất" handleClick={() => navigate('/news')} /> 
+                <TitleSection title="Sự kiện mới nhất" handleClick={() => navigate('/news')} /> 
             </Box>
             <Swiper
                 spaceBetween={12}
@@ -47,7 +41,7 @@ const NewsSection: React.FC = () => {
                 loop
             >
                 {
-                    newsData.map((item, index) => (
+                    eventData.map((item, index) => (
                         <SwiperSlide key={index}>
                             <div onClick={() => navigate(`/news-detail`)}>
                                 <img
@@ -69,4 +63,4 @@ const NewsSection: React.FC = () => {
     )
 }
 
-export default NewsSection
+export default EventSection

@@ -43,12 +43,48 @@
   font-display: swap;
 }
 
+@font-face {
+  font-family: 'Playfair Display';
+  src: url('../fonts/PlayfairDisplay-SemiBold.woff2') format('woff2'),
+    url('../fonts/PlayfairDisplay-SemiBold.woff') format('woff');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Playfair Display';
+  src: url('../fonts/PlayfairDisplay-Bold.woff2') format('woff2'),
+    url('../fonts/PlayfairDisplay-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  --white-color: #ffffff;
+  --black-color: #222222;
+  --grey-light-color: #F5F5F5;
+  --primary-color: #355933;
+  --secondary-color: #80876d;
+  --third-color: #c5a47e;
+  --text-color: #3a3a3a;
+  --bg-color: #fff;
+  --bg-color-2: #fff;
+}
+
 body {
   font-family: "Montserrat", sans-serif;
+  color: var(--text-color);
   font-weight: 400;
   user-select: none;
   font-size: 14px;
   line-height: 20px;
+}
+
+h1 {
+  font-family: "Playfair Display", serif;
+  font-weight: 500;
 }
 
 .zaui-routes {
@@ -63,7 +99,7 @@ body {
 }
 
 .zaui-page.home {
-  background-color: #731611;
+  background-color: var(--white-color);
   margin-top: 0;
 }
 
@@ -91,7 +127,7 @@ body {
 
   // & .zaui-icon,
   // & .zaui-header-title {
-  //   // color: #731611;
+  //   // color: var(--primary-color);
   //   // font-weight: 600;
   // }
 }
@@ -122,11 +158,11 @@ select {
 
 input[type='checkbox'],
 input[type='radio'] {
-  accent-color: #731611;
+  accent-color: var(--primary-color);
 }
 
 .zaui-checkbox-checked .zaui-checkbox-inner {
-  background-color: #731611;
+  background-color: var(--primary-color);
 }
 
 .zaui-modal-content {
@@ -164,7 +200,7 @@ tbody tr td:not(:first-child) {
 }
 
 
-.zaui-swiper-item  {
+.zaui-swiper-item {
   opacity: 1 !important;
 }
 
@@ -196,6 +232,13 @@ tbody tr td:not(:first-child) {
 .line-clamp-2 {
   display: -webkit-box;
   -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.line-clamp-1 {
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
   -webkit-box-orient: vertical;
   overflow: hidden;
 }
@@ -236,7 +279,7 @@ tbody tr td:not(:first-child) {
 }
 
 .zaui-bottom-navigation-item-active {
-  color: #731611;
+  color: var(--primary-color);
 }
 
 /**
@@ -260,11 +303,11 @@ tbody tr td:not(:first-child) {
 }
 
 .zaui-btn-primary {
-  background-color: #731611;
+  background-color: var(--primary-color);
 }
 
 .zaui-btn-primary:active {
-  background-color: #731611;
+  background-color: var(--primary-color);
 }
 
 /**
@@ -290,7 +333,7 @@ textarea[name="address"] {
 }
 
 .zaui-radio-checked .zaui-radio-checkmark {
-  background-color: #731611;
+  background-color: var(--primary-color);
 }
 
 .flexCol .radio-group {
@@ -412,7 +455,7 @@ div.ql-editor {
   height: 48px;
   border-radius: 50%;
   display: inline-block;
-  border-top: 4px solid #731611;
+  border-top: 4px solid var(--primary-color);
   border-right: 4px solid transparent;
   box-sizing: border-box;
   animation: rotation 1s linear infinite;
@@ -427,7 +470,7 @@ div.ql-editor {
   width: 48px;
   height: 48px;
   border-radius: 50%;
-  border-left: 4px solid #731611;
+  border-left: 4px solid var(--primary-color);
   border-bottom: 4px solid transparent;
   animation: rotation 0.5s linear infinite reverse;
 }
@@ -453,7 +496,7 @@ div.ql-editor {
 
 .login-page .login-form input {
   height: 46px;
-  background-color: #73161118;
+  background-color: var(--primary-color);
   padding-left: 38px;
   padding-right: 28px;
 }
@@ -461,8 +504,16 @@ div.ql-editor {
 .login-page .login-form input,
 .login-page .login-form input::placeholder {
   font-size: 16px;
-  color: #731611;
+  color: var(--primary-color);
   font-weight: 600;
+}
+
+/**
+* BANNER
+**/
+
+.banner-silder .zaui-swiper {
+  border-radius: 0 !important;
 }
 
 /**
@@ -479,7 +530,7 @@ div.ql-editor {
 
 /**
 * MAPS
-**/ 
+**/
 
 .leaflet-touch .leaflet-control-attribution a {
   display: none;
@@ -492,3 +543,33 @@ div.ql-editor {
 .leaflet-popup-content-wrapper {
   background-color: #ffffffe8;
 }
+
+// CUSTOM
+
+.cusine-category {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.cusine-category:after,
+.cusine-category::before {
+  content: "";
+  display: block;
+  width: 30px;
+  height: 1px;
+  background-color: var(--primary-color);
+}
+
+.cusine-category::before {
+  width: 10px;
+}
+
+.swiper-slide {
+  opacity: 0.4;
+}
+
+.swiper-slide-active {
+  opacity: 1;
+}
+

@@ -30,44 +30,64 @@ export type ServicesType = {
 
 export const SERVICES: ServicesType[] = [
     {
-        label: 'Thông tin hộ dân',
-        url: '/resident',
-        icon: images.home
-    },
-    {
         label: 'Tin tức',
         url: '/news',
         icon: images.news
     },
     {
-        label: 'Góp ý kiến',
-        url: '/feedback',
+        label: 'Sự kiện',
+        url: '/event',
+        icon: images.event
+    },
+    {
+        label: 'Điểm đến nổi bật',
+        url: '/event',
+        icon: images.landmark
+    },
+    {
+        label: 'Điểm du lịch',
+        url: '/event',
+        icon: images.island
+    },
+    {
+        label: 'Đặc sản',
+        url: '/event',
+        icon: images.salad
+    },
+    {
+        label: 'Nhà hàng',
+        url: '/event',
+        icon: images.restaurant
+    },
+    {
+        label: 'Lưu trú',
+        url: '/event',
+        icon: images.hotel
+    },
+    {
+        label: 'Tour du lịch',
+        url: '/event',
+        icon: images.destination
+    },
+    {
+        label: 'Hướng dẫn viên',
+        url: '/event',
+        icon: images.tourGuide
+    },
+    {
+        label: 'Tiện ích khác',
+        url: '/event',
+        icon: images.more
+    },
+    {
+        label: 'Yêu thích',
+        url: '/event',
+        icon: images.more
+    },
+    {
+        label: 'Phản ánh',
+        url: '/event',
         icon: images.idea
-    },
-    {
-        label: 'Thông tin cuộc họp',
-        url: '/meeting',
-        icon: images.meeting
-    },
-    {
-        label: 'Khảo sát ý kiến',
-        url: '/survey',
-        icon: images.survey
-    },
-    {
-        label: 'Thông tin tổ chức',
-        url: '/team',
-        icon: images.team
-    },
-    {
-        label: 'Bản đồ',
-        url: '/maps',
-        icon: images.map
-    },
-    {
-        label: 'Tình hình tài chính',
-        url: '/transactions',
-        icon: images.money
     },
 ]
 
