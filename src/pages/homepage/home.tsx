@@ -3,6 +3,7 @@ import { CusineSection } from "components/cusine";
 import { DestinationSection, DestinationTravelSection } from "components/destination";
 import { Divider } from "components/divider";
 import { HotelSection } from "components/hotel";
+import { LongAnMap } from "components/map";
 import { EventSection, NewsSection } from "components/news";
 import { RestaurantSection } from "components/restaurant";
 import { ServiceSection } from "components/services";
@@ -34,6 +35,8 @@ const HomePage: React.FunctionComponent = () => {
           <RestaurantSection />
           <Divider />
           <HotelSection />
+          <Divider />
+          <LongAnMap />
         </div>
       </Box>
     </Page>

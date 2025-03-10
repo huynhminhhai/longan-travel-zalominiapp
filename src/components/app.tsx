@@ -11,6 +11,7 @@ import { AccountPage, ChangePasswordPage, LoginPage, ProfileAccountPage } from "
 import { LoadingFullScreen } from "./loading";
 import { useStoreApp } from "store/store";
 import { NotificationPage } from "pages/notification";
+import { EventDetailPage, EventPage } from "pages/event";
 
 const MyApp = () => {
 
@@ -29,6 +30,10 @@ const MyApp = () => {
               {/* NEWS */}
               <Route path="/news" element={<NewsPage></NewsPage>}></Route>
               <Route path="/news-detail" element={<NewsDetailPage></NewsDetailPage>}></Route>
+
+              {/* EVENT */}
+              <Route path="/event" element={<EventPage></EventPage>}></Route>
+              <Route path="/event-detail" element={<EventDetailPage></EventDetailPage>}></Route>
 
               {/* FEEDBACK */}
               <Route path="/feedback" element={<FeedbackPage></FeedbackPage>}></Route>

@@ -439,117 +439,76 @@ export const RESIDENTMAIN = {
 
 export type News = {
     id: number;
-    title: string;             // Tiêu đề
-    description: string;       // Mô tả
-    content: string;           // Nội dung
-    imageUrl?: string;         // Ảnh minh họa (tuỳ chọn)
-    publishedDate: string;     // Ngày đăng (ISO string hoặc dạng khác)
-    author: string;            // Tác giả
-    views: number;             // Số lượt xem
+    title: string;             
+    description: string;      
+    content: string;           
+    imageUrl?: string;         
+    publishedDate: string;     
+    author: string;
+    views: number;
+    category: any;
 };
 
 export const NEWSDATA: News[] = [
     {
         id: 1,
-        title: "Cho trẻ làm quen với tiếng Anh",
-        description: "Lứa tuổi mầm non là giai đoạn vàng để trẻ tiếp cận và làm quen với ngôn ngữ mới. Do vậy, một số trường mầm non trên địa bàn tỉnh Long An tổ chức cho trẻ làm quen với tiếng Anh, được phụ huynh ủng hộ và mang lại hiệu quả tích cực.",
-        content: '<p>Bên cạnh nỗ lực của trường, GV trực tiếp dạy tiếng Anh cũng không ngừng đổi mới, áp dụng phương pháp dạy hay, hiệu quả. Cô Phùng Thị Ngọc Hảo - GV dạy tiếng Anh tại Trường Mầm non Hoa Hồng, chia sẻ: "Trong quá trình dạy tiếng Anh cho trẻ, tôi sử dụng nhiều phương pháp từ hình ảnh trực quan, âm nhạc đến tương tác bằng ứng dụng công nghệ thông tin. Ngoài ra, tôi còn tổ chức các hoạt động đội, nhóm nhằm tạo không khí vui tươi, giúp trẻ hứng thú học tập và có thể phát triển tối đa khả năng".</p><p>Cô Nguyễn Thị Thu Cúc thông tin thêm: “Qua hoạt động này, trẻ tự tin, nhanh nhẹn, hoạt bát; phụ huynh đồng tình ủng hộ đăng ký trên tinh thần tự nguyện, cho con đi học đều đặn, duy trì số lượng đăng ký; đặc biệt, chất lượng dạy và học của đơn vị ngày càng nâng lên”.</p><p>Trường Mẫu giáo Bình An (huyện Thủ Thừa) có khoảng 70% trẻ tham gia làm quen với tiếng Anh. Trường tạo điều kiện cho GV tiếng Anh tham gia các buổi sinh hoạt chuyên đề, tập huấn,... để học hỏi kinh nghiệm từ đồng nghiệp, chuyên gia, từ đó nâng cao trình độ chuyên môn, vận dụng tốt vào thực tế giảng dạy tại đơn vị.</p><p>Ngoài ra, trường còn tổ chức các hoạt động khác, lồng ghép song ngữ để trẻ có điều kiện thực hành, ôn tập cũng như phát huy khả năng nghe, nói.</p><p>Có thể thấy, cho trẻ làm quen với tiếng Anh góp phần nâng cao chất lượng giảng dạy tiếng Anh trong giáo dục mầm non, đáp ứng yêu cầu ngày càng cao của xã hội hiện đại./.</p>',
-        imageUrl: "https://cdn.thuvienphapluat.vn/uploads/tintuc/2022/09/17/tre-mam-non.png",
+        title: "Trồng khoai mì ruột vàng mang lại thu nhập cao",
+        description: "Trong quá trình sản xuất nông nghiệp, nhiều nông dân nhạy bén nắm bắt nhu cầu thị trường, mạnh dạn chuyển đổi cơ cấu cây trồng, bước đầu mang lại hiệu quả kinh tế. Ông Võ Văn Cư (ấp 2, xã Hựu Thạnh, huyện Đức Hòa, tỉnh Long An) là một trong những nông dân như thế.",
+        content: '',
+        imageUrl: "https://www.baolongan.vn/image/news/2025/20250228/images/62_766_img-1316.jpg",
         publishedDate: "08/01/2025",
         author: "Phan Minh T",
         views: 1200,
+        category: "Xã hội", // Thêm trường category
     },
     {
         id: 2,
-        title: "Thông tin mới nhất về bệnh đường hô hấp do virus HMPV",
-        description: "HMPV được xác định lần đầu tiên vào năm 2001, là một bệnh nhiễm trùng đường hô hấp gây ra các triệu chứng giống cúm, đặc biệt ảnh hưởng đến mọi lứa tuổi, đặc biệt trẻ em và người lớn tuổi.",
-        imageUrl: "",
-        content: '<p>Hiện Trung Quốc, Ấn Độ và Kazakhstan đã ghi nhận nhiều ca nhiễm virus human metapneumovirus (HMPV) gây bệnh đường hô hấp.</p><p>HMPV được xác định lần đầu tiên vào năm 2001, là một bệnh nhiễm trùng đường hô hấp gây ra các triệu chứng giống cúm.</p><p>Loại virus này có thể tác động đến mọi người ở mọi lứa tuổi; đặc biệt, trẻ em dưới 5 tuổi, người lớn tuổi và những người có hệ miễn dịch yếu phải đối mặt với nguy cơ cao hơn./.</p>',
+        title: "Du lịch Long An - Thêm nhiều hứa hẹn",
+        description: "Năm 2024, lần đầu tiên tỉnh đón hơn 2 triệu lượt du khách trong năm với tổng doanh thu vượt 1.000 tỉ đồng. Dịp Tết Nguyên đán Ất Tỵ năm 2025, mặc dù một số điểm du lịch trong tỉnh không mở cửa đón khách (khu du lịch (KDL) Happy Land, KDL Vàm Cỏ farmstay) nhưng lượt du khách đến Long An không giảm.",
+        imageUrl: "https://www.baolongan.vn/image/news/2025/20250203/images/19_2025-37_52534448_475437088-1149167247217145-3869741133198436879-n.jpg",
+        content: '',
         publishedDate: "07/01/2025",
         author: "Lê Thị B",
         views: 800,
+        category: "Văn hóa - Giải trí", // Thêm trường category
     },
     {
         id: 3,
-        title: "Long An: Tập trung triển khai hiệu quả quy hoạch tỉnh",
-        description: "UBND tỉnh chỉ đạo các đơn vị liên quan tập trung phối hợp thực hiện có hiệu quả quy hoạch tỉnh thời kỳ 2021-2030, tầm nhìn đến năm 2050; nâng cao hiệu quả công tác lập, quản lý và triển khai thực hiện các quy hoạch theo Luật Quy hoạch.",
-        content: '<p><a href="https://baolongan.vn/long-an-tap-trung-phoi-hop-thuc-hien-tot-cong-tac-lap-quy-hoach-ke-hoach-su-dung-dat-a187733.html" target="_blank"><span><strong>Quy hoạch tỉnh Long An </strong></span></a>thời kỳ 2021-2030, tầm nhìn đến năm 2050 đã được Thủ tướng Chính phủ phê duyệt tại Quyết định số 686/QĐ-TTg, ngày 13/6/2023.</p><p>Ngay sau khi quy hoạch được phê duyệt, UBND tỉnh đã ban hành nhiều văn bản, quyết định triển khai thực hiện quy hoạch tỉnh.&nbsp;Sở Kế hoạch và Đầu tư phối hợp với đơn vị tư vấn, các sở, ngành tỉnh thực hiện chuyển đổi cơ sở dữ liệu hồ sơ quy hoạch và sơ đồ, bản đồ quy hoạch tỉnh theo Thông tư số 04/2023/TT-BKHĐT, ngày 26/6/2023 của Bộ Kế hoạch và Đầu tư về hướng dẫn yêu cầu nội dung và kỹ thuật của cơ sở dữ liệu hồ sơ quy hoạch và sơ đồ, bản đồ các quy hoạch theo luật quy hoạch.</p><p>Hiện Thủ tướng Chính phủ đã phê duyệt kế hoạch thực hiện quy hoạch tỉnh Long An thời kỳ 2021-2030, tầm nhìn đến năm 2050 tại Quyết định số 1003/QĐ-TTg, ngày 19/9/2024.</p><p>Trong thời gian tới, UBND tỉnh tập trung <a href="https://baolongan.vn/quy-hoach-su-dung-dat-gop-phan-thuc-day-kinh-te-xa-hoi-dia-phuong-phat-trien-a113276.html" target="_blank"><span><strong>nâng cao hiệu quả công tác lập, quản lý và triển khai thực hiện các quy hoạch </strong></span></a>theo Luật Quy hoạch. Trong đó, tỉnh&nbsp;thực hiện có hiệu quả quy hoạch tỉnh thời kỳ 2021-2030, tầm nhìn đến năm 2050; hoàn thành lập các quy hoạch xây dựng vùng huyện, quy hoạch xây dựng dọc các trục giao thông động lực của tỉnh; điều chỉnh, hoàn thiện các quy hoạch đô thị (đặc biệt quy hoạch đô thị Đức Hòa, Bến Lức, Cần Giuộc), quy hoạch nông thôn cho phù hợp với quy hoạch tỉnh; triển khai xây dựng các quy hoạch mang tính chất kỹ thuật, chuyên ngành để cụ thể hóa quy hoạch tỉnh.</p><p>Đồng thời, tỉnh kịp thời điều chỉnh quy hoạch tỉnh cho phù hợp với quy hoạch cấp trên, tình hình thực tế của địa phương (nếu có);.../.</p>',
-        imageUrl: "https://www.baolongan.vn/image/news/2025/20250106/images/z5853771514310_4e9304e176258f21a761cb8cdb9db801.jpg",
+        title: "Về xứ đồng bưng thưởng thức món ngon dân dã",
+        description: "Về huyện Đức Huệ, tỉnh Long An, chúng ta không chỉ tận hưởng khung cảnh yên bình mà còn được thưởng thức các món ăn dân dã gắn liền với người dân nơi đây qua bao thế hệ. Xứ sở đồng bưng ấy được thiên nhiên ưu ái ban tặng nhiều sản vật làm ra những món ăn ngon, bình dị, trong đó một số món trở thành đặc sản mang đậm đà hương vị quê hương.",
+        content: '',
+        imageUrl: "https://www.baolongan.vn/image/news/2025/20250226/images/2_2025-36_94342599_ngu-o-i-da-n-di-xu-c-ca-lia-thia-o-ca-c-ca-nh-do-ng-nga-p-nu-o-c.jpg",
         publishedDate: "06/01/2025",
         author: "Trần Quốc D",
         views: 1500,
+        category: "Văn hóa - Giải trí", // Thêm trường category
     },
     {
         id: 4,
-        title: "Long An còn gần 2.700 hộ nghèo",
-        description: "UBND tỉnh Long An đã ban hành quyết định phê duyệt hộ nghèo, hộ cận nghèo cuối năm 2024 trên địa bàn tỉnh.",
-        content: '<p style="text-align: center;"></p><p><a href="https://baolongan.vn/toan-tinh-long-an-con-208-nha-o-tam-bo-dot-nat-a181948.html" target="_blank"><span style="color:#0000CD;"><strong>Tổng số hộ nghèo đầu năm 2024</strong></span></a> là 3.654 hộ; trong đó khu vực thành thị 571 hộ, khu vực nông thôn 3.083 hộ.</p><p>Qua rà soát, tổng số hộ nghèo toàn tỉnh cuối năm 2024 chỉ còn lại 2.692 hộ (giảm 962 hộ so với đầu năm); trong đó, hộ nghèo khu vực thành thị còn 404 hộ và khu vực nông thôn còn 2.288 hộ. Tính trên tổng số 484.997 hộ dân của toàn tỉnh thì hộ nghèo còn chiếm 0,56%.</p><p>Ngoài ra, qua thống kê, tổng số hộ cận nghèo toàn tỉnh vào đầu năm 2024 là 9.026 hộ; trong đó, hộ cận nghèo khu vực thành thị 1.456 hộ và khu vực nông thôn 7.570 hộ. Đến cuối 2024, tổng số hộ cận nghèo toàn tỉnh còn 7.358 hộ (giảm 1.668 hộ so với đầu năm); trong đó, hộ cận nghèo khu vực thành thị 1.257 hộ và khu vực nông thôn 6.101 hộ. Với tổng số 484.997 hộ dân toàn tỉnh thì số hộ cận nghèo hiện còn 1,52%.</p><p>Trên cơ sở ban hành quyết định này, UBND tỉnh giao Sở Lao động - Thương binh và Xã hội chủ trì, phối hợp các sở, ngành liên quan, UBND các huyện, thị xã, thành phố<a href="https://baolongan.vn/da-dang-giai-phap-giam-ngheo-ben-vung-hieu-qua-a175722.html" target="_blank"><span style="color:#0000CD;"><strong> triển khai, thực hiện các chính sách hỗ trợ đối với hộ nghèo, hộ cận nghèo theo quy định</strong></span></a>. Từ đó, tạo điều kiện giúp người nghèo, người cận nghèo vươn lên, thoát nghèo bền vững, phát triển kinh tế, ổn định cuộc sống./.</p>',
-        imageUrl: "https://www.baolongan.vn/image/news/2025/20250108/thumbnail/348x254/704_1736326202.jpg",
+        title: "Hướng đến tương lai xanh với nông nghiệp công nghệ cao",
+        description: "Nhằm thúc đẩy sự phát triển bền vững, tỉnh Long An đã triển khai nhiều dự án nông nghiệp công nghệ cao. Các mô hình nông nghiệp hiện đại hứa hẹn không chỉ nâng cao năng suất mà còn bảo vệ môi trường.",
+        imageUrl: "",
+        content: '',
         publishedDate: "05/01/2025",
-        author: "Trần Quốc D",
-        views: 1500,
+        author: "Nguyễn Văn A",
+        views: 1100,
+        category: "Kinh tế",
     },
     {
         id: 5,
-        title: "Rực rỡ ruộng lúa, bờ hoa",
-        description: "Những ngày này, có một tuyến đường hoa rực sắc trên địa bàn xã An Vĩnh Ngãi, TP.Tân An, tỉnh Long An thu hút sự quan tâm của người dân địa phương và khu vực lân cận. Đây là tuyến đường thuộc mô hình Ruộng lúa, bờ hoa của Hội Nông dân xã An Vĩnh Ngãi triển khai, thực hiện, góp phần nâng cao nhận thức của người dân trong bảo vệ môi trường, chung tay thực hiện tiêu chí xã nông thôn mới kiểu mẫu.",
-        content: '<p>Được biết, tuyến đường bêtông thực hiện mô hình Ruộng lúa, bờ hoa là đường Năm Minh, ấp Hòa Ngãi, có chiều dài khoảng 200m, khu vực trồng hoa dài khoảng 150m.</p><p>Sau khi đặt mua hạt giống hoa sao nhái Thái (hoa cánh bướm), đầu tháng 11/2024, các hội viên nông dân bắt đầu gieo hạt và cùng nhau vun trồng, chăm bón. Sau khoảng 45 ngày, hoa bắt đầu nở rộ, mang đến diện mạo mới cho khu vực này.</p><p><em style="color:#808080;float:left;font-size:small;margin-bottom:5px;margin:auto;text-align:center;width:100%;">Trên tuyến đường thuộc mô hình Ruộng lúa, bờ hoa, một bên là ruộng lúa xanh mướt, một bên là hàng hoa rực rỡ</em></p><p>Chủ tịch Hội Nông dân xã An Vĩnh Ngãi - Trương Thị Diệu cho biết: Không ai bảo ai, các hội viên tự giác dọn rác, bao bì thuốc bảo vệ thực vật, chung tay chăm sóc, tưới nước, nhổ cỏ, giúp hoa phát triển tốt. Chủ ruộng gần đó cũng nhiệt tình hỗ trợ chăm hoa, giúp hoa thêm đẹp lâu hơn.</p><p>Từ khi mô hình Ruộng lúa, bờ hoa được triển khai, cảnh sắc nơi đây như khoác lên “tấm áo mới” đầy sức sống. Một bên là ruộng lúa xanh mướt mênh mông, một bên là hàng hoa rực rỡ tạo nên bức tranh nông thôn xinh đẹp. Lúc sáng sớm hay buổi chiều mát mẻ, nhiều người thường đến đây tản bộ, chụp ảnh hay đơn giản là hít thở không khí trong lành, tận hưởng vẻ đẹp thanh bình của quê hương.</p><p>Chị Nguyễn Thị Ngọc Sương - người dân ấp Hòa Ngãi, xã An Vĩnh Ngãi, chia sẻ: "Từ khi có tuyến đường hoa, chiều nào gia đình tôi cũng ra đây dạo chơi và chụp ảnh. Chẳng cần đi đâu xa, tôi cũng có thể check-in khung cảnh tuyệt đẹp ngay gần nhà. Khi đăng ảnh lên mạng, bạn bè tôi đều trầm trồ hỏi thăm và muốn được đến tham quan con đường này".</p><p><em style="color:#808080;float:left;font-size:small;margin-bottom:5px;margin:auto;text-align:center;width:100%;">Từ khi mô hình Ruộng lúa, bờ hoa được triển khai, cảnh sắc nơi đây như khoác lên “tấm áo mới” đầy sức sống</em></p><p>Hiện nay, Hội Nông dân xã tiếp tục ươm hoa hướng dương để trồng xen kẽ với hoa sao nhái Thái, tạo thêm sự đa dạng về màu sắc, hứa hẹn mang đến một tuyến đường hoa ngày càng rực rỡ, tạo điểm nhấn nổi bật, góp phần làm đẹp <a href="https://baolongan.vn/vung-que-sang-xanh-sach-dep-an-toan-a186491.html" target="_blank"><span style="color:#0000FF;">cảnh quan nông thôn</span></a>.</p><p>Bí thư Chi đoàn ấp Hòa Ngãi, xã An Vĩnh Ngãi - Nguyễn Hữu Trọng cho biết: “Nhà tôi ở gần tuyến đường này nên thường xuyên vận động người dân, đoàn viên, thanh niên ấp nâng cao ý thức bảo vệ môi trường, giữ cho tuyến đường hoa sạch, đẹp”.</p><p><em style="color:#808080;float:left;font-size:small;margin-bottom:5px;margin:auto;text-align:center;width:100%;">Người dân check-in tại tuyến đường hoa</em></p><p>Tuyến đường hoa của Hội Nông dân xã An Vĩnh Ngãi không chỉ góp phần làm đẹp cảnh quan mà còn gắn kết cộng đồng, nâng cao đời sống tinh thần cho người dân./.</p>',
-        imageUrl: "https://www.baolongan.vn/image/news/2025/20250107/thumbnail/348x254/682_1736264791.jpg",
+        title: "Thúc đẩy phát triển hạ tầng giao thông Long An",
+        description: "Long An đang tập trung đầu tư mạnh mẽ vào hệ thống giao thông nhằm kết nối các khu vực trong tỉnh và các tỉnh lân cận. Việc này không chỉ hỗ trợ phát triển kinh tế mà còn nâng cao chất lượng cuộc sống cho người dân.",
+        imageUrl: "",
+        content: '',
         publishedDate: "04/01/2025",
-        author: "Trần Quốc D",
-        views: 1500,
-    },
-    {
-        id: 10,
-        title: "Hội thi thể thao khu phố năm 2025",
-        description: "Một trong những sự kiện thể thao lớn nhất trong khu phố sẽ diễn ra vào cuối tuần này với sự tham gia của các đội thể thao từ các khu vực lân cận.",
-        content: '<p>Hội thi thể thao khu phố năm 2025 sẽ bao gồm các môn thi đấu như bóng đá, bóng chuyền, và cầu lông. Đây là cơ hội để các cư dân trong khu phố giao lưu, thể hiện tài năng và xây dựng tinh thần đoàn kết.</p>',
-        imageUrl: "",
-        publishedDate: "10/01/2025",
-        author: "Lê Minh Hải",
-        views: 350,
-    },
-    {
-        id: 11,
-        title: "Lễ hội mùa xuân của khu phố",
-        description: "Lễ hội mùa xuân sắp tới sẽ bao gồm các hoạt động văn hóa, ẩm thực và biểu diễn nghệ thuật. Đây là dịp để các gia đình trong khu phố quây quần bên nhau.",
-        content: '<p>Lễ hội mùa xuân là sự kiện thường niên tại khu phố, với các hoạt động thú vị như thi nấu ăn, diễu hành, và các tiết mục văn nghệ. Sự kiện này luôn thu hút sự tham gia của nhiều gia đình trong khu vực.</p>',
-        imageUrl: "",
-        publishedDate: "12/01/2025",
-        author: "Nguyễn Thị Lan",
-        views: 450,
-    },
-    {
-        id: 12,
-        title: "Cải tạo công viên khu phố",
-        description: "Công viên khu phố sẽ được cải tạo với nhiều tiện ích mới như khu vui chơi cho trẻ em và các khu vực thể thao ngoài trời.",
-        content: '<p>Dự án cải tạo công viên khu phố đang được triển khai, hứa hẹn mang đến một không gian sống xanh và lành mạnh cho cư dân trong khu vực. Các tiện ích mới sẽ bao gồm khu vui chơi cho trẻ em, các sân thể thao, và đường đi bộ rợp bóng cây.</p>',
-        imageUrl: "",
-        publishedDate: "14/01/2025",
-        author: "Trần Văn Bình",
-        views: 500,
-    },
-    {
-        id: 13,
-        title: "Lớp học miễn phí cho người lớn tuổi trong khu phố",
-        description: "Một lớp học miễn phí về kỹ năng sống và sử dụng công nghệ cho người lớn tuổi sẽ được tổ chức tại trung tâm cộng đồng khu phố.",
-        content: '<p>Lớp học dành cho người lớn tuổi tại khu phố sẽ giúp các cư dân cao tuổi cải thiện kỹ năng sống và học cách sử dụng các thiết bị công nghệ thông minh. Chương trình này nhằm mục đích giúp họ tiếp cận với các tiện ích hiện đại trong đời sống hàng ngày.</p>',
-        imageUrl: "",
-        publishedDate: "16/01/2025",
-        author: "Phạm Minh Tuấn",
-        views: 550,
-    },
-    {
-        id: 14,
-        title: "Công tác bảo vệ môi trường khu phố",
-        description: "Chương trình dọn dẹp khu phố và nâng cao nhận thức về bảo vệ môi trường sẽ diễn ra vào cuối tuần này.",
-        content: '<p>Chương trình bảo vệ môi trường khu phố sẽ bao gồm các hoạt động dọn dẹp đường phố, thu gom rác thải và trồng cây xanh. Đây là một hoạt động ý nghĩa giúp cải thiện môi trường sống trong khu phố và nâng cao ý thức cộng đồng về bảo vệ thiên nhiên.</p>',
-        imageUrl: "",
-        publishedDate: "18/01/2025",
-        author: "Nguyễn Minh Tâm",
-        views: 600,
+        author: "Lê Minh T",
+        views: 950,
+        category: "Kinh tế",
     }
 ];
+
+
+
 
 export type feedbackType = {
     [key: number]: string;

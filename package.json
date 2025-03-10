@@ -30,6 +30,9 @@
     "classnames": "^2.5.1",
     "framer-motion": "^12.3.1",
     "leaflet": "^1.9.4",
+    "leaflet-defaulticon-compatibility": "^0.1.2",
+    "leaflet-routing-machine": "^3.2.12",
+    "leaflet-search": "^4.0.0",
     "leaflet.heat": "^0.2.0",
     "prop-types": "^15.8.1",
     "react": "^18.3.1",
@@ -49,6 +52,7 @@
   },
   "devDependencies": {
     "@types/leaflet": "^1.9.16",
+    "@types/leaflet-routing-machine": "^3.2.8",
     "@types/react": "^18.3.1",
     "@types/react-dom": "^18.3.0",
     "@types/react-router-dom": "^5.3.3",

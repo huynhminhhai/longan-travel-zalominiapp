@@ -20,9 +20,6 @@ const NewsList: React.FC = () => {
                     }
                 </Box>
             </div>
-            <div className="flex items-center justify-center gap-3 pt-6 pb-2">
-                <Button onClick={() => console.log('call api list news')} size="medium">Xem thêm</Button>
-            </div>
         </Box>
     )
 }

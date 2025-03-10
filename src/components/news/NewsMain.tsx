@@ -7,25 +7,25 @@ type NewsMainProps = {
     data: News
 }
 
-const NewsMain: React.FC<NewsMainProps> = ({data}) => {
+const NewsMain: React.FC<NewsMainProps> = ({ data }) => {
 
     const navigate = useNavigate()
 
     return (
-        <Box>
-            <div
-                className="news-item"
-                onClick={() => navigate(`/news-detail/?id=${data.id}`)}
-            >
-                <div className="w-[100%] h-auto">
-                    <img className="h-[100%] w-[100%] object-cover" src={data.imageUrl || images.thumbnailNews} alt={data.title} />
-                </div>
-                <Box px={4}>
-                    <div className="flex-1 flex flex-col justify-center mt-3 border-b-[1px] pb-4">
-                        <h3 className="text-[18px] leading-[22px] font-semibold line-clamp-2 mb-1">{data.title}</h3>
-                        <div className="line-clamp-3 text-[16px] leading-[20px] font-normal text-[#7c7c7c] mb-2">{data.description}</div>
-                        <div className="text-end text-[14px] leading-[1] text-[#7c7c7c]">{data.publishedDate}</div>
+        <Box px={4} pb={4} mb={4}>
+            <div onClick={() => navigate(`/news-detail`)}>
+                <img
+                    className="slide-img h-[200px] w-full object-cover rounded-lg"
+                    src={data.imageUrl || images.thumbnailNews}
+                    alt={data.title}
+                />
+                <Box>
+                    <div className="flex items-center justify-between mt-3 mb-2 pb-2 border-b-[1px] border-[#355933]">
+                        <div className="text-[13px] leading-[1] font-semibold">{data.category}</div>
+                        <div className="text-[12px] leading-[1] font-medium">{data.publishedDate}</div>
                     </div>
+                    <h3 className="text-[16px] font-semibold whitespace-normal mt-2 line-clamp-2 ">{data.title}</h3>
+                    <div className="line-clamp-2">{data.description}</div>
                 </Box>
             </div>
         </Box>
