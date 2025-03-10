@@ -3,7 +3,6 @@ import React from 'react'
 import { Box, useNavigate } from 'zmp-ui'
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
-import { TravelItem } from 'components/travel';
 import TourItem from './TourItem';
 
 export const tourData = [
@@ -28,14 +27,14 @@ export const tourData = [
         place: 2,
         price: '350.000đ'
     },
-] 
+]
 
-const TourSection:React.FC = () => {
+const TourSection: React.FC = () => {
 
     const navigate = useNavigate()
 
-  return (
-    <Box py={4} pl={4}>
+    return (
+        <Box py={4} pl={4}>
             <Box pr={4}>
                 <TitleSection title="Tour du lịch" handleClick={() => navigate('/news')} />
             </Box>
@@ -47,13 +46,13 @@ const TourSection:React.FC = () => {
                 {
                     tourData.map((item, index) => (
                         <SwiperSlide key={index}>
-                            <TourItem data={item}  />
+                            <TourItem data={item} />
                         </SwiperSlide>
                     ))
                 }
             </Swiper>
         </Box>
-  )
+    )
 }
 
 export default TourSection

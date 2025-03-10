@@ -9,9 +9,11 @@ const TravelItem: React.FC<any> = ({ data }) => {
             <Box px={3} py={4}>
                 <h3 className='text-[16px] font-bold text-[#355933] line-clamp-1 mb-2'>{data.title}</h3>
                 <ul className='flex flex-col gap-1 text-[14px] leading-[18px] font-medium'>
-                    <li className='flex items-center gap-1'>
-                        <Icon icon='mdi:place-outline' />
-                        {data.address}
+                    <li className='flex items-start gap-1'>
+                        <Icon className='w-[20px] mt-1' icon='mdi:place-outline' />
+                        <span className='flex-1 line-clamp-2'>
+                            {data.address}
+                        </span>
                     </li>
                 </ul>
             </Box>

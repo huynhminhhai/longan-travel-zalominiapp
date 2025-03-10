@@ -2,7 +2,9 @@ import { BannerSlider } from "components/banner";
 import { CusineSection } from "components/cusine";
 import { DestinationSection, DestinationTravelSection } from "components/destination";
 import { Divider } from "components/divider";
+import { HotelSection } from "components/hotel";
 import { EventSection, NewsSection } from "components/news";
+import { RestaurantSection } from "components/restaurant";
 import { ServiceSection } from "components/services";
 import { TourSection } from "components/tour";
 import React from "react";
@@ -28,6 +30,10 @@ const HomePage: React.FunctionComponent = () => {
           <EventSection />
           <Divider />
           <TourSection />
+          <Divider />
+          <RestaurantSection />
+          <Divider />
+          <HotelSection />
         </div>
       </Box>
     </Page>

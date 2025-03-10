@@ -10,11 +10,11 @@ const TourItem: React.FC<any> = ({ data }) => {
                 <h3 className='text-[16px] font-bold text-[#355933] line-clamp-1 mb-2'>{data.title}</h3>
                 <ul className='flex flex-col gap-1 text-[14px] leading-[18px] font-medium'>
                     <li className='flex items-center gap-1'>
-                        <Icon icon='mdi:place-outline' />
+                        <Icon className='w-[20px]' icon='mdi:place-outline' />
                         {data.place} địa điểm
                     </li>
                     <li className='flex items-center gap-1'>
-                        <Icon icon='material-symbols:date-range-outline' />
+                        <Icon className='w-[20px]' icon='material-symbols:date-range-outline' />
                         {data.date} ngày
                     </li>
 
