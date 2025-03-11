@@ -28,6 +28,7 @@ import { OilDetailPage, OilPage } from "pages/oil";
 import { HospitalDetailPage, HospitalPage } from "pages/hospital";
 import { AtmPage } from "pages/atm";
 import { MarketPage } from "pages/market";
+import { BusRoutingDetailPage, BusRoutingPage } from "pages/bus-routing";
 
 const MyApp = () => {
 
@@ -95,6 +96,10 @@ const MyApp = () => {
               {/* Bus */}
               <Route path="/bus" element={<BusPage></BusPage>}></Route>
               <Route path="/bus-detail" element={<BusDetailPage></BusDetailPage>}></Route>
+
+              {/* Bus routing */}
+              <Route path="/bus-routing" element={<BusRoutingPage></BusRoutingPage>}></Route>
+              <Route path="/bus-routing-detail" element={<BusRoutingDetailPage></BusRoutingDetailPage>}></Route>
 
               {/* Taxi */}
               <Route path="/taxi" element={<TaxiPage></TaxiPage>}></Route>
