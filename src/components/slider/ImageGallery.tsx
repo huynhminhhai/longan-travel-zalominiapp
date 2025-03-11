@@ -18,7 +18,7 @@ export default function ImageGallery({ images }) {
         watchSlidesProgress
         thumbs={{ swiper: thumbsSwiper }}
         modules={[Thumbs]}
-        className="mb-4 max-w-[360px] h-[240px]"
+        className="mb-4 max-w-[360px] h-[240px] rounded-lg"
       >
         {images.map((src, index) => (
           <SwiperSlide key={index}>
@@ -41,7 +41,7 @@ export default function ImageGallery({ images }) {
       >
         {images.map((src, index) => (
           <SwiperSlide key={index}>
-            <img src={src} alt={`Thumb ${index}`} className="w-[80px] h-[50px]" />
+            <img src={src} alt={`Thumb ${index}`} className="w-[80px] h-[50px] rounded-lg" />
           </SwiperSlide>
         ))}
       </Swiper>

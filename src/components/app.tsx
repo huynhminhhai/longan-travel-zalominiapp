@@ -15,6 +15,7 @@ import { EventDetailPage, EventPage } from "pages/event";
 import { DestinationDetailPage, DestinationPage } from "pages/destination";
 import { DestinationTravelDetailPage, DestinationTravelPage } from "pages/destination-travel";
 import { CusineDetailPage, CusinePage } from "pages/cusine";
+import { RestaurantDetailPage, RestaurantPage } from "pages/restaurant";
 
 const MyApp = () => {
 
@@ -49,6 +50,10 @@ const MyApp = () => {
               {/* CUSINE */}
               <Route path="/cusine" element={<CusinePage></CusinePage>}></Route>
               <Route path="/cusine-detail" element={<CusineDetailPage></CusineDetailPage>}></Route>
+
+              {/* RESTAURANT */}
+              <Route path="/restaurant" element={<RestaurantPage></RestaurantPage>}></Route>
+              <Route path="/restaurant-detail" element={<RestaurantDetailPage></RestaurantDetailPage>}></Route>
 
               {/* FEEDBACK */}
               <Route path="/feedback" element={<FeedbackPage></FeedbackPage>}></Route>
