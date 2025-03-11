@@ -4,6 +4,7 @@ import 'leaflet/dist/leaflet.css';
 import { Tabs } from 'zmp-ui';
 import 'leaflet-search/dist/leaflet-search.min.css';
 import images from 'assets/images';
+import { openUrlInWebview } from 'services/zalo';
 
 interface Location {
   lat: number;
@@ -129,7 +130,7 @@ const LongAnMap: React.FC = () => {
     );
 
     items.forEach((item: Location) => {
-      L.marker([item.lat, item.lng], { icon, title: item.name })
+      const marker = L.marker([item.lat, item.lng], { icon, title: item.name })
         .addTo(markersRef.current)
         .bindPopup(`
           <div style="width: 180px">
@@ -140,16 +141,28 @@ const LongAnMap: React.FC = () => {
               <div style="color: #355933; font-size: 15px; font-weight: 600; margin-bottom: 2px;">${item.name}</div>
               <div style="font-size: 11px;">
                 <div style="margin-bottom: 4px;"><strong>Địa chỉ:</strong> ${item.address}</div>
-                <a href="https://maps.google.com/?q=${item.lat},${item.lng}" target="_blank">Xem trên Google Maps</a>
+                <button style="line-height: 1; padding: 6px; background-color: #355933; border-radius: 4px; color: #fff;" class="google-maps-link">Chỉ đường</button>
               </div>
             </div>
           </div>
         `);
+
+        marker.on('popupopen', () => {
+          const googleMapsLink = (marker.getPopup() as any).getElement()?.querySelector('.google-maps-link');
+          if (googleMapsLink) {
+            googleMapsLink.addEventListener('click', () => openGoogleMaps(item.lat, item.lng));
+          }
+        });
     });
 
     if (bounds.isValid()) {
       mapRef.current.fitBounds(bounds, { paddingTopLeft: [0, 100], maxZoom: 14 });
     }
+  };
+
+  const openGoogleMaps = async (lat, lng) => {
+    const googleMapsUrl = `https://www.google.com/maps/dir/?api=1&destination=${lat},${lng}`;
+    await openUrlInWebview(googleMapsUrl, 'bottomSheet');  // Sử dụng hàm openUrlInWebview để mở Google Maps
   };
 
   const addSearchControl = () => {

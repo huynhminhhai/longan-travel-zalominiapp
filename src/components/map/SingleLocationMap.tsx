@@ -56,13 +56,11 @@ const SingleLocationMap: React.FC<Props> = ({ location }) => {
         </div>
       `).openPopup();
 
-    // Gán sự kiện cho link "Xem trên Google Maps" sau khi popup được hiển thị
     const googleMapsLink = document.querySelector('.google-maps-link');
     if (googleMapsLink) {
       googleMapsLink.addEventListener('click', openGoogleMaps);
     }
 
-    // Cleanup: Gỡ sự kiện khi component unmount
     return () => {
       if (googleMapsLink) {
         googleMapsLink.removeEventListener('click', openGoogleMaps);
