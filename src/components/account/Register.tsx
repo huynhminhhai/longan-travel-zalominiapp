@@ -7,9 +7,12 @@ import { FormInputField } from "components/form"
 import { Icon } from "@iconify/react"
 import { useLoginWithZalo } from "services/loginWithZalo"
 
-const defaultValues: FormDataLogin = {
+const defaultValues: any = {
     username: '',
-    password: ''
+    phonenumber: '',
+    password: '',
+    passwordConfirm: ''
+
 }
 
 const LoginForm: React.FC = () => {
@@ -72,6 +75,16 @@ const LoginForm: React.FC = () => {
                         <FormInputField
                             name="username"
                             label=""
+                            placeholder="Họ tên"
+                            control={control}
+                            error={errors.username?.message}
+                        />
+                    </div>
+                    <div className="col-span-12 relative">
+                        <Icon icon='mdi:user' fontSize={20} color="#355933" className="absolute left-[10px] z-10 top-[47%] translate-y-[-50%]"/>
+                        <FormInputField
+                            name="username"
+                            label=""
                             placeholder="Số điện thoại"
                             control={control}
                             error={errors.username?.message}
@@ -94,11 +107,28 @@ const LoginForm: React.FC = () => {
                             }
                         </div>
                     </div>
+                    <div className="col-span-12 relative">
+                        <Icon icon='mdi:password' fontSize={20} color="#355933" className="absolute left-[10px] z-10 top-[47%] translate-y-[-50%]"/>
+                        <FormInputField
+                            name="password"
+                            type={isHide ? 'password' : 'text'}
+                            label=""
+                            placeholder="Nhập lại mật khẩu"
+                            control={control}
+                            error={errors.password?.message}
+                        />
+                        <div className="absolute right-[10px] z-10 top-[47%] translate-y-[-50%]" onClick={() => setIsHide(!isHide)}>
+                            
+                            {
+                                isHide ? <Icon fontSize={20} color="#355933" icon='mdi:eye-off'/> : <Icon fontSize={20} color="#355933" icon='mdi:eye'/>
+                            }
+                        </div>
+                    </div>
                     <div className="col-span-12 relative mt-[60px]">
                         <Button fullWidth onClick={handleSubmit(onSubmit)}>
-                            {loading ? "Đang xử lý..." : "Đăng nhập"}
+                            {loading ? "Đang xử lý..." : "Đăng ký"}
                         </Button>
-                        <div className="mt-3 font-medium">Bạn không có tài khoản? <span onClick={() => loginWithZalo()} className="font-semibold text-[#355933]">Đăng nhập với zalo</span></div>
+                        <div className="mt-3 font-medium text-center">Bạn có tài khoản? <span onClick={() => loginWithZalo()} className="font-semibold text-[#355933]">Đăng nhập với zalo</span> hoặc <span className="font-semibold text-[#355933]">Đăng nhập</span></div>
                     </div>
                 </div>
             </Box>

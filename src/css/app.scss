@@ -498,9 +498,13 @@ div.ql-editor {
   height: 12px;
 }
 
+.login-page.register .login-form label {
+  height: 6px;
+}
+
 .login-page .login-form input {
   height: 46px;
-  background-color: var(--primary-color);
+  // background-color: var(--primary-color);
   padding-left: 38px;
   padding-right: 28px;
 }

@@ -31,6 +31,7 @@ import { MarketPage } from "pages/market";
 import { BusRoutingDetailPage, BusRoutingPage } from "pages/bus-routing";
 import { GalleryDetailPage, GalleryPage } from "pages/gallery";
 import { LanguagePage, SearchPage, SettingsPage } from "pages/settings";
+import RegisterPage from "pages/account/register";
 
 const MyApp = () => {
 
@@ -128,6 +129,7 @@ const MyApp = () => {
               {/* ACCOUNT */}
               <Route path="/account" element={<AccountPage></AccountPage>}></Route>
               <Route path="/login" element={<LoginPage></LoginPage>}></Route>
+              <Route path="/register" element={<RegisterPage></RegisterPage>}></Route>
               <Route path="/profile-account" element={<ProfileAccountPage></ProfileAccountPage>}></Route>
               <Route path="/change-password" element={<ChangePasswordPage></ChangePasswordPage>}></Route>
 

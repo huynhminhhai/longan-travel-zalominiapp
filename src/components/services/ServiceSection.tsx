@@ -22,7 +22,7 @@ const ServiceSection: React.FC<any> = ({ setSheetVisible }) => {
                     }}>
                         <div className="flex-center flex-col gap-2">
                             <Box>
-                                <div className="bg-[#355933] rounded-full flex-center p-4 w-[60px] h-[60px] relative">
+                                <div className="bg-[#ccc] rounded-full flex-center p-4 w-[60px] h-[60px] relative">
                                     <img src={images.more} alt='Tiện ích khác' />
                                 </div>
                             </Box>

@@ -95,6 +95,17 @@ const AccountPage: React.FC = () => {
                             />
                         </List>
                     </Box>
+                    <Box m={4}>
+                        <List className="bg-white rounded-lg">
+                            <div className="px-4 pt-4 pb-2 text-[18px] leading-[1] font-medium">Đăng ký</div>
+                            <Item
+                                onClick={() => navigate('/register')}
+                                title="Đăng ký tài khoản mới"
+                                prefix={<img src={images.login} width={30} />}
+                                suffix={<Icon fontSize={20} icon="formkit:right" />}
+                            />
+                        </List>
+                    </Box>
                 </Box>
             </Box>
         </Page>

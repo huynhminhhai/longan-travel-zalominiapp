@@ -29,7 +29,7 @@ const tabs: Record<string, MenuItem> = {
 
 export type TabKeys = keyof typeof tabs;
 
-export const HAS_BOTTOM_NAVIGATION_PAGES = ["/", "/management", "/account", "/notification"];
+export const HAS_BOTTOM_NAVIGATION_PAGES = ["/", "/management", "/account", "/settings"];
 
 export const Navigation: FC = () => {
   const navigate = useNavigate();
