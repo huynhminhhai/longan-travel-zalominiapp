@@ -20,6 +20,11 @@ const tabs: Record<string, MenuItem> = {
     icon: <Icon icon="icon-park-solid:people" />,
     activeIcon: <Icon icon="icon-park-solid:people" />
   },
+  "/settings": {
+    label: "Cài đặt",
+    icon: <Icon icon="weui:setting-filled" />,
+    activeIcon: <Icon icon="weui:setting-filled" />
+  },
 };
 
 export type TabKeys = keyof typeof tabs;

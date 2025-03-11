@@ -30,6 +30,7 @@ import { AtmPage } from "pages/atm";
 import { MarketPage } from "pages/market";
 import { BusRoutingDetailPage, BusRoutingPage } from "pages/bus-routing";
 import { GalleryDetailPage, GalleryPage } from "pages/gallery";
+import { LanguagePage, SettingsPage } from "pages/settings";
 
 const MyApp = () => {
 
@@ -132,6 +133,8 @@ const MyApp = () => {
 
               {/* NOTIFICATION */}
               <Route path="/notification" element={<NotificationPage></NotificationPage>}></Route>
+              <Route path="/settings" element={<SettingsPage></SettingsPage>}></Route>
+              <Route path="/languages" element={<LanguagePage></LanguagePage>}></Route>
 
             </Routes>
             <Navigation />

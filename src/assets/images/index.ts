@@ -51,6 +51,9 @@ import taxi from './taxi.png'
 import market from './market.png'
 import oil from './oil-station.png'
 import gallery from './gallery.png'
+import languages from './languages.png'
+import vietnam from './vietnam.png'
+import england from './england.png'
 
 const images = {
     logo,
@@ -105,7 +108,10 @@ const images = {
     taxi,
     market,
     oil,
-    gallery
+    gallery,
+    languages,
+    vietnam,
+    england
 }
 
 export default images
