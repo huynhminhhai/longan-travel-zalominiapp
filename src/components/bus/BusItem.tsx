@@ -2,12 +2,12 @@ import { Icon } from '@iconify/react'
 import React from 'react'
 import { Box, useNavigate } from 'zmp-ui'
 
-const ShoppingItem: React.FC<any> = ({ data }) => {
+const BusItem: React.FC<any> = ({ data }) => {
 
     const navigate = useNavigate()
 
     return (
-        <Box className='border-[1px] rounded-lg' onClick={() => navigate('/shopping-detail')}>
+        <Box className='border-[1px] rounded-lg' onClick={() => navigate('/bus-detail')}>
             <img className='w-full h-[210px] object-cover rounded-lg' src={data.img} alt={data.name} />
             <Box px={3} py={4}>
                 <h3 className='text-[16px] font-bold text-[#355933] line-clamp-1 mb-2'>{data.name}</h3>
@@ -24,4 +24,4 @@ const ShoppingItem: React.FC<any> = ({ data }) => {
     )
 }
 
-export default ShoppingItem
+export default BusItem
