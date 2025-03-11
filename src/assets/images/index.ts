@@ -42,6 +42,14 @@ import place from './place.svg'
 import email from './email.svg'
 import phone from './phone.svg'
 import favorite from './favorite.svg'
+import bus from './bus-stop.png'
+import shopping from './shopping-cart.png'
+import busRouting from './bus.png'
+import hospital from './hospital.png'
+import atm from './atm-machine.png'
+import taxi from './taxi.png'
+import market from './market.png'
+import oil from './oil-station.png'
 
 const images = {
     logo,
@@ -87,7 +95,15 @@ const images = {
     place,
     phone,
     email,
-    favorite
+    favorite,
+    bus,
+    shopping,
+    busRouting,
+    hospital,
+    atm,
+    taxi,
+    market,
+    oil
 }
 
 export default images

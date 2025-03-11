@@ -85,11 +85,6 @@ export const SERVICES: ServicesType[] = [
         url: '/feedback',
         icon: images.feedback
     },
-    {
-        label: 'Tiện ích khác',
-        url: '/event',
-        icon: images.more
-    },
 ]
 
 export type MeetingStatusType = {
