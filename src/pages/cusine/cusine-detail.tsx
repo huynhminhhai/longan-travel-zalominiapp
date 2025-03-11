@@ -1,7 +1,7 @@
 import images from 'assets/images'
 import CommentTemp from 'components/comment-temp'
 import { HeaderSub } from 'components/header-sub'
-import { MultipleLocationMap, SingleLocationMap } from 'components/map'
+import { CategoryMap, MultipleLocationMap, SingleLocationMap } from 'components/map'
 import { ImageGallery } from 'components/slider'
 import TitleSection from 'components/titleSection'
 import React from 'react'
@@ -112,7 +112,44 @@ const CusineDetailPage = () => {
                             <div className="detail-body--item">
                                 <h3 className="title">Điểm bán đặc sản</h3>
                                 <div className="infor-map">
-                                    <MultipleLocationMap locations={location} />
+                                    <CategoryMap locations={[
+                                        {
+                                            "lat": 10.6167,
+                                            "lng": 106.4167,
+                                            "name": "Lẩu Mắm Sáu Tỉn",
+                                            "address": "Số 23 Nguyễn Trung Trực, P.2, TP. Tân An, Long An",
+                                            "img": "https://sakos.vn/wp-content/uploads/2024/09/kham-pha-lau-mam-mien-tay-dam-da-tai-sai-gon-ban-da-biet-chua-7.jpg"
+                                        },
+                                        {
+                                            "lat": 10.5357,
+                                            "lng": 106.4103,
+                                            "name": "Lẩu Mắm Cô Ba",
+                                            "address": "456 Quốc lộ 1A, TT. Bến Lức, Long An",
+                                            "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEnSH4NEat6G6C1CxQiF2Dyy_nZTRJOtFWDA&amp;s"
+                                        },
+                                        {
+                                            "lat": 10.6427,
+                                            "lng": 106.4901,
+                                            "name": "Lẩu Mắm Đồng Quê",
+                                            "address": "12 Đường 3/2, TT. Đức Hòa, Long An",
+                                            "img": "https://lh3.googleusercontent.com/p/AF1QipMC_C1dZGQb5VUo0eLGGWUhWsPS2ZlL9M42JYUj=s1360-w1360-h1020"
+                                        },
+                                        {
+                                            "lat": 10.6875,
+                                            "lng": 106.4392,
+                                            "name": "Lẩu Mắm Bà Tám",
+                                            "address": "78 Trần Hưng Đạo, TT. Cần Giuộc, Long An",
+                                            "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRaqqk5mzvKhMjJ9e1fBD0Z9RBOXfC-LCZYbQ&amp;s"
+                                        },
+                                        {
+                                            "lat": 10.6185,
+                                            "lng": 106.5317,
+                                            "name": "Lẩu Mắm Hai Lúa",
+                                            "address": "Số 5 Nguyễn An Ninh, TP. Tân An, Long An",
+                                            "img": "https://halotravel.vn/wp-content/uploads/2021/07/logo-1-4.jpg"
+                                        }
+                                    ]
+                                    } />
                                 </div>
                             </div>
                         </div>

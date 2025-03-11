@@ -21,6 +21,7 @@ import { TourDetailPage, TourPage } from "pages/tour";
 import GuidePage from "pages/guide/guide";
 import GuideDetailPage from "pages/guide/guide-detail";
 import { FavoritePage } from "pages/favorite";
+import { ShoppingDetailPage, ShoppingPage } from "pages/shopping";
 
 const MyApp = () => {
 
@@ -80,6 +81,10 @@ const MyApp = () => {
               <Route path="/feedback-detail" element={<FeedbackDetailPage></FeedbackDetailPage>}></Route>
               <Route path="/feedback-add" element={<FeedbackAddPage></FeedbackAddPage>}></Route>
               <Route path="/feedback-history" element={<FeedbackHistoryPage></FeedbackHistoryPage>}></Route>
+
+              {/* Shopping */}
+              <Route path="/shopping" element={<ShoppingPage></ShoppingPage>}></Route>
+              <Route path="/shopping-detail" element={<ShoppingDetailPage></ShoppingDetailPage>}></Route>
 
               {/* ACCOUNT */}
               <Route path="/account" element={<AccountPage></AccountPage>}></Route>
