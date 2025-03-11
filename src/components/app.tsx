@@ -25,6 +25,7 @@ import { ShoppingDetailPage, ShoppingPage } from "pages/shopping";
 import { BusDetailPage, BusPage } from "pages/bus";
 import { TaxiDetailPage, TaxiPage } from "pages/taxi";
 import { OilDetailPage, OilPage } from "pages/oil";
+import { HospitalDetailPage, HospitalPage } from "pages/hospital";
 
 const MyApp = () => {
 
@@ -100,6 +101,10 @@ const MyApp = () => {
               {/* Oil */}
               <Route path="/oil" element={<OilPage></OilPage>}></Route>
               <Route path="/oil-detail" element={<OilDetailPage></OilDetailPage>}></Route>
+
+              {/* Hospital */}
+              <Route path="/hospital" element={<HospitalPage></HospitalPage>}></Route>
+              <Route path="/hospital-detail" element={<HospitalDetailPage></HospitalDetailPage>}></Route>
 
               {/* ACCOUNT */}
               <Route path="/account" element={<AccountPage></AccountPage>}></Route>
