@@ -42,7 +42,7 @@ export const SERVICESOTHER: ServicesType[] = [
   },
   {
     label: 'Xăng/dầu',
-    url: '/oild-station',
+    url: '/oil',
     icon: images.oil
   },
   {
