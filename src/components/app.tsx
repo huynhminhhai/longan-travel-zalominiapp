@@ -13,6 +13,7 @@ import { useStoreApp } from "store/store";
 import { NotificationPage } from "pages/notification";
 import { EventDetailPage, EventPage } from "pages/event";
 import { DestinationDetailPage, DestinationPage } from "pages/destination";
+import { DestinationTravelDetailPage, DestinationTravelPage } from "pages/destination-travel";
 
 const MyApp = () => {
 
@@ -39,6 +40,10 @@ const MyApp = () => {
               {/* DESTINATION */}
               <Route path="/destination" element={<DestinationPage></DestinationPage>}></Route>
               <Route path="/destination-detail" element={<DestinationDetailPage></DestinationDetailPage>}></Route>
+
+              {/* DESTINATION TRAVEL */}
+              <Route path="/destination-travel" element={<DestinationTravelPage></DestinationTravelPage>}></Route>
+              <Route path="/destination-travel-detail" element={<DestinationTravelDetailPage></DestinationTravelDetailPage>}></Route>
 
               {/* FEEDBACK */}
               <Route path="/feedback" element={<FeedbackPage></FeedbackPage>}></Route>

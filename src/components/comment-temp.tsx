@@ -33,19 +33,6 @@ const CommentTemp = () => {
                             </span>
                         </div>
                     </div>
-                    <div className="detail-comment">
-                        <div className="avatar">
-                            <img src="https://cdn-icons-png.flaticon.com/128/3608/3608172.png" alt="commnet" />
-                        </div>
-                        <div className="infor">
-                            <div className="title">
-                                <div className="name">Nguyễn Thị Thúy Quỳnh</div><span className="date">05/03/2025</span>
-                            </div>
-                            <span className="desc">
-                                Bài viết hay quá, thông tin rất hữu ích!
-                            </span>
-                        </div>
-                    </div>
                 </div>
             </div>
             <div className="rating">

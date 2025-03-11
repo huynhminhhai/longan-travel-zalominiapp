@@ -1,19 +1,20 @@
 import { DestinationItem } from 'components/destination'
-import { destinationData } from 'components/destination/DestinationSection'
+import { DestinationTravelItem } from 'components/detination-travel'
+import { destinationTravelData } from 'components/detination-travel/DestinationTravelSection'
 import { Divider } from 'components/divider'
 import { HeaderSub } from 'components/header-sub'
 import FilterBar from 'components/table/FilterBar'
 import React from 'react'
 import { Box, Input, Page, Select, useNavigate } from 'zmp-ui'
 
-const DestinationPage = () => {
+const DestinationTravelPage = () => {
 
     const { Option } = Select
 
     return (
         <Page className="relative flex-1 flex flex-col bg-white">
             <Box>
-                <HeaderSub title="Địa điểm nổi bật" />
+                <HeaderSub title="Địa điểm du lịch" />
                 <Box pb={4}>
                     <FilterBar
                         showAddButton={false}
@@ -37,9 +38,9 @@ const DestinationPage = () => {
                     <Divider />
                     <Box px={4} pt={4}>
                         {
-                            destinationData.map((item, index) => (
+                            destinationTravelData.map((item, index) => (
                                 <Box mb={3} key={index}>
-                                    <DestinationItem data={item} />
+                                    <DestinationTravelItem data={item} />
                                 </Box>
                             ))
                         }
@@ -50,4 +51,4 @@ const DestinationPage = () => {
     )
 }
 
-export default DestinationPage
+export default DestinationTravelPage

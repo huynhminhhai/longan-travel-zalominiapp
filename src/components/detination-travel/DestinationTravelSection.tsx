@@ -1,6 +1,6 @@
 import React from 'react'
 import { Box, useNavigate } from 'zmp-ui'
-import DestinationItem from './DestinationItem'
+import DestinationItem from './DestinationTravelItem'
 import TitleSection from 'components/titleSection'
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';

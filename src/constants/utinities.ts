@@ -46,7 +46,7 @@ export const SERVICES: ServicesType[] = [
     },
     {
         label: 'Điểm du lịch',
-        url: '/event',
+        url: '/destination-travel',
         icon: images.island
     },
     {

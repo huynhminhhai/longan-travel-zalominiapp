@@ -1,6 +1,7 @@
 import { BannerSlider } from "components/banner";
 import { CusineSection } from "components/cusine";
-import { DestinationSection, DestinationTravelSection } from "components/destination";
+import { DestinationSection } from "components/destination";
+import { DestinationTravelSection } from "components/detination-travel";
 import { Divider } from "components/divider";
 import { HotelSection } from "components/hotel";
 import { LongAnMap } from "components/map";
