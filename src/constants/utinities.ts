@@ -77,12 +77,12 @@ export const SERVICES: ServicesType[] = [
     
     {
         label: 'Yêu thích',
-        url: '/event',
+        url: '/favorite',
         icon: images.lover
     },
     {
         label: 'Phản ánh',
-        url: '/event',
+        url: '/feedback',
         icon: images.feedback
     },
     {
