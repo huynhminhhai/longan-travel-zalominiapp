@@ -10,16 +10,11 @@ const tabs: Record<string, MenuItem> = {
     icon: <Icon icon="fa6-solid:house" />,
     activeIcon: <Icon icon="fa6-solid:house" />
   },
-  "/notification": {
-    label: "Thông báo",
-    icon: <div className="relative"> <Icon icon='radix-icons:dot-filled' className="absolute top-[-10px] right-[-10px]" color="#ff4045" /> <Icon icon="solar:bell-bold" /></div>,
-    activeIcon: <Icon icon="solar:bell-bold" />
-  },
-  "/management": {
-    label: "Quản lý",
-    icon: <Icon icon="eos-icons:cluster-management" />,
-    activeIcon: <Icon icon="eos-icons:cluster-management" />
-  },
+  // "/notification": {
+  //   label: "Thông báo",
+  //   icon: <div className="relative"> <Icon icon='radix-icons:dot-filled' className="absolute top-[-10px] right-[-10px]" color="#ff4045" /> <Icon icon="solar:bell-bold" /></div>,
+  //   activeIcon: <Icon icon="solar:bell-bold" />
+  // },
   "/account": {
     label: "Tài khoản",
     icon: <Icon icon="icon-park-solid:people" />,

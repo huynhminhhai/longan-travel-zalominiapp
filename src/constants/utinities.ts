@@ -41,7 +41,7 @@ export const SERVICES: ServicesType[] = [
     },
     {
         label: 'Điểm đến nổi bật',
-        url: '/event',
+        url: '/destination',
         icon: images.landmark
     },
     {
@@ -74,20 +74,21 @@ export const SERVICES: ServicesType[] = [
         url: '/event',
         icon: images.tourGuide
     },
-    {
-        label: 'Tiện ích khác',
-        url: '/event',
-        icon: images.more
-    },
+    
     {
         label: 'Yêu thích',
         url: '/event',
-        icon: images.more
+        icon: images.lover
     },
     {
         label: 'Phản ánh',
         url: '/event',
-        icon: images.idea
+        icon: images.feedback
+    },
+    {
+        label: 'Tiện ích khác',
+        url: '/event',
+        icon: images.more
     },
 ]
 

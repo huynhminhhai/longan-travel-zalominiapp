@@ -12,7 +12,7 @@ const TitleSection: React.FC<TitleSectionType> = ({ title, mB = 4, handleClick }
     return (
         <Box mb={mB}>
             <div className="flex items-center justify-between">
-                <h3 className="text-[22px] text-[#355933] font-bold font-secondary">{title}</h3>
+                <h3 className="text-[22px] text-[#355933] font-semibold font-secondary">{title}</h3>
                 {
                     handleClick &&
                     <div

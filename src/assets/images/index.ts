@@ -36,6 +36,12 @@ import tourGuide from './tour-guide.png'
 import destination from './destination.png'
 import landmark from './landmark.png'
 import island from './island.png'
+import feedback from './write-feedback.png'
+import lover from './lover.png'
+import place from './place.svg'
+import email from './email.svg'
+import phone from './phone.svg'
+import favorite from './favorite.svg'
 
 const images = {
     logo,
@@ -75,7 +81,13 @@ const images = {
     tourGuide,
     destination,
     landmark,
-    island
+    island,
+    feedback,
+    lover,
+    place,
+    phone,
+    email,
+    favorite
 }
 
 export default images

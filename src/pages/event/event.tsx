@@ -1,7 +1,9 @@
+import { Divider } from "components/divider"
 import { HeaderSub } from "components/header-sub"
 import { EventList, NewsList } from "components/news"
+import FilterBar from "components/table/FilterBar"
 import React from "react"
-import { Box, Page } from "zmp-ui"
+import { Box, Input, Page } from "zmp-ui"
 
 const EventPage: React.FC = () => {
     return (
@@ -9,7 +11,20 @@ const EventPage: React.FC = () => {
             <Box>
                 <HeaderSub title="Sự kiện" />
                 <Box pb={4}>
-                    <EventList />
+                    <FilterBar
+                        showAddButton={false}
+                    >
+                        <div className="col-span-12">
+                            <Input
+                                placeholder="Tìm kiếm..."
+                                value={''}
+                            />
+                        </div>
+                    </FilterBar>
+                    <Divider />
+                    <Box pt={4}>
+                        <EventList />
+                    </Box>
                 </Box>
             </Box>
         </Page>

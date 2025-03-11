@@ -89,7 +89,7 @@ const NewsDetailPage: React.FC = () => {
                     <CommentTemp />
                 </Box>
                 <Box px={4}>
-                    <TitleSection title="Sự kiện khác khác" handleClick={() => navigate('/news')} />
+                    <TitleSection title="Sự kiện khác" handleClick={() => navigate('/news')} />
                     <Box>
                         {
                             EVENTDATA.slice(1).map((item, index) => (

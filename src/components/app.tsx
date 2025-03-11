@@ -12,6 +12,7 @@ import { LoadingFullScreen } from "./loading";
 import { useStoreApp } from "store/store";
 import { NotificationPage } from "pages/notification";
 import { EventDetailPage, EventPage } from "pages/event";
+import { DestinationDetailPage, DestinationPage } from "pages/destination";
 
 const MyApp = () => {
 
@@ -34,6 +35,10 @@ const MyApp = () => {
               {/* EVENT */}
               <Route path="/event" element={<EventPage></EventPage>}></Route>
               <Route path="/event-detail" element={<EventDetailPage></EventDetailPage>}></Route>
+
+              {/* DESTINATION */}
+              <Route path="/destination" element={<DestinationPage></DestinationPage>}></Route>
+              <Route path="/destination-detail" element={<DestinationDetailPage></DestinationDetailPage>}></Route>
 
               {/* FEEDBACK */}
               <Route path="/feedback" element={<FeedbackPage></FeedbackPage>}></Route>

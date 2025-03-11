@@ -569,14 +569,15 @@ div.ql-editor {
   width: 10px;
 }
 
-.swiper-slide {
-  opacity: 0.4;
-}
-
-.swiper-slide-active {
-  opacity: 1;
-}
-
 .leaflet-popup-content {
   margin: 20px 12px 12px !important;
 }
+
+.slider-thumb .swiper-slide {
+  opacity: 0.4;
+}
+
+.slider-thumb .swiper-slide-thumb-active {
+  opacity: 1;
+}
+

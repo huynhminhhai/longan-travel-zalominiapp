@@ -758,7 +758,7 @@ a.button-primary {
 
 .detail-container {
     display: grid;
-    grid-template-columns: calc(65% - 24px) calc(35% - 12px);
+    grid-template-columns: 1fr;
     gap: 36px;
 }
 
@@ -1590,6 +1590,26 @@ a.button-primary {
 
     .component-list {
         padding-bottom: 2px;
+    }
+
+    .detail-comment .title {
+        flex-direction: column;
+        gap: 2px;
+        margin-bottom: 6px;
+    }
+
+    .detail-comment .date {
+        margin-left: 0;
+    }
+
+    .detail-comment {
+        gap: 12px;
+        padding-left: 0;
+    }
+
+    .detail-bottom {
+        padding-top: 20px;
+        margin-top: 20px;
     }
     
 }
