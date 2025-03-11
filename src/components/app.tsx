@@ -29,6 +29,7 @@ import { HospitalDetailPage, HospitalPage } from "pages/hospital";
 import { AtmPage } from "pages/atm";
 import { MarketPage } from "pages/market";
 import { BusRoutingDetailPage, BusRoutingPage } from "pages/bus-routing";
+import { GalleryDetailPage, GalleryPage } from "pages/gallery";
 
 const MyApp = () => {
 
@@ -118,6 +119,10 @@ const MyApp = () => {
 
               {/* Market */}
               <Route path="/market" element={<MarketPage></MarketPage>}></Route>
+
+              {/* Gallery */}
+              <Route path="/gallery" element={<GalleryPage></GalleryPage>}></Route>
+              <Route path="/gallery-detail" element={<GalleryDetailPage></GalleryDetailPage>}></Route>
 
               {/* ACCOUNT */}
               <Route path="/account" element={<AccountPage></AccountPage>}></Route>

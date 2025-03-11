@@ -50,6 +50,7 @@ import atm from './atm-machine.png'
 import taxi from './taxi.png'
 import market from './market.png'
 import oil from './oil-station.png'
+import gallery from './gallery.png'
 
 const images = {
     logo,
@@ -103,7 +104,8 @@ const images = {
     atm,
     taxi,
     market,
-    oil
+    oil,
+    gallery
 }
 
 export default images
