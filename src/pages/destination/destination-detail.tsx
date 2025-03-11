@@ -116,7 +116,7 @@ const DestinationDetailPage = () => {
                     <CommentTemp />
                 </Box>
                 <Box px={4} pb={4}>
-                    <TitleSection title="Địa điểm nổi bật khác" handleClick={() => navigate('/news')} />
+                    <TitleSection title="Địa điểm nổi bật khác" />
                     <div className="detail-sidebar">
                         <div className="sidebar-item">
                             <div className="detail-others">

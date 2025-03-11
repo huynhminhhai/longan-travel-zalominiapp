@@ -5,7 +5,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import CusineItem from './CusineItem';
 
-const cusineData = [
+export const cusineData = [
     {
         title: 'Lẩu mắm Long An',
         desc: 'Lẩu mắm đặc sản Long An được chế biến với sự kết hợp đặc biệt từ nguồn nguyên liệu phong phú từ biển, sông, ao, hồ, và đồng ruộng.Trong lẩu mắm, ta có thể tìm thấy cá, tôm, cua, mực, heo, bò...Đồ ăn được kết hợp với một loạt các loại rau khác nhau như rau muống, giá đỗ, rau cải, dưa leo, khóm(thơm),',

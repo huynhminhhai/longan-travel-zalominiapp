@@ -1611,5 +1611,9 @@ a.button-primary {
         padding-top: 20px;
         margin-top: 20px;
     }
+
+    .detail-form {
+        margin-bottom: 32px;
+    }
     
 }

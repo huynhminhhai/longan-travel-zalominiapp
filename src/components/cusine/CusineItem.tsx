@@ -6,7 +6,7 @@ const CusineItem: React.FC<any> = ({ data }) => {
     const navigate = useNavigate()
 
     return (
-        <Box onClick={() => navigate('')}>
+        <Box onClick={() => navigate('/cusine-detail')}>
             <div className='h-[200px] w-full'>
                 <img className='w-full h-full object-cover' src={data.imgUrl} alt={data.title} />
             </div>

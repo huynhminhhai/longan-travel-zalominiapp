@@ -51,7 +51,7 @@ export const SERVICES: ServicesType[] = [
     },
     {
         label: 'Đặc sản',
-        url: '/event',
+        url: '/cusine',
         icon: images.salad
     },
     {
