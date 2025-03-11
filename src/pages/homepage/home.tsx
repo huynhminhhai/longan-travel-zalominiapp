@@ -50,6 +50,11 @@ export const SERVICESOTHER: ServicesType[] = [
     url: '/hospital',
     icon: images.hospital
   },
+  {
+    label: 'ATM',
+    url: '/atm',
+    icon: images.atm
+  },
 ]
 
 const HomePage: React.FunctionComponent = () => {

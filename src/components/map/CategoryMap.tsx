@@ -13,12 +13,12 @@ interface Location {
   img: string;
 }
 
-const CategoryMap: React.FC<any> = ({locations}) => {
+const CategoryMap: React.FC<any> = ({locations, iconMarker}) => {
   const mapRef = useRef<L.Map | null>(null);
   const markersRef = useRef<L.LayerGroup>(L.layerGroup());
 
   const icon = L.icon({
-    iconUrl: 'https://cdn-icons-png.flaticon.com/128/948/948036.png',
+    iconUrl: iconMarker || 'https://cdn-icons-png.flaticon.com/128/948/948036.png',
     iconSize: [32, 32],
     iconAnchor: [16, 32],
     popupAnchor: [0, -32],
@@ -27,7 +27,7 @@ const CategoryMap: React.FC<any> = ({locations}) => {
   useEffect(() => {
     import('leaflet-search').then(() => {
       if (!mapRef.current) {
-        mapRef.current = L.map('map').setView([10.5333, 106.4167], 10);
+        mapRef.current = L.map('map').setView([locations[0].lat, locations[0].lng], 10);
         L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
           maxZoom: 19,
         }).addTo(mapRef.current);
