@@ -1,3 +1,4 @@
+import { Icon } from "@iconify/react";
 import images from "assets/images";
 import { BannerSlider } from "components/banner";
 import { CusineSection } from "components/cusine";
@@ -12,7 +13,7 @@ import { ServiceItem, ServiceSection } from "components/services";
 import { TourSection } from "components/tour";
 import { SERVICES, ServicesType } from "constants/utinities";
 import React, { useState } from "react";
-import { Box, Page, Sheet } from "zmp-ui";
+import { Box, Input, Page, Sheet, useNavigate } from "zmp-ui";
 
 export const SERVICESOTHER: ServicesType[] = [
   {
@@ -66,11 +67,20 @@ const HomePage: React.FunctionComponent = () => {
 
   const [sheetVisible, setSheetVisible] = useState(false);
 
+  const navigate = useNavigate()
+
   return (
     <Page className="relative flex-1 flex flex-col bg-white pb-[66px] home">
       <Box className="relative z-[1]">
         <BannerSlider />
         <div className="bg-white rounded-t-2xl pt-3 translate-y-[-30px] box-shadow-2">
+          <Box p={4} >
+            <Input.Search
+              onClick={() => navigate('/search')}
+              placeholder="Tìm nhanh địa điểm, đặc sản..."
+              onSearch={(text) => console.log(text)}
+            />
+          </Box>
           <ServiceSection setSheetVisible={setSheetVisible} />
           <Divider />
           <DestinationSection />
