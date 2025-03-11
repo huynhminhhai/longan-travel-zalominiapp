@@ -18,6 +18,8 @@ import { CusineDetailPage, CusinePage } from "pages/cusine";
 import { RestaurantDetailPage, RestaurantPage } from "pages/restaurant";
 import { HotelDetailPage, HotelPage } from "pages/hotel";
 import { TourDetailPage, TourPage } from "pages/tour";
+import GuidePage from "pages/guide/guide";
+import GuideDetailPage from "pages/guide/guide-detail";
 
 const MyApp = () => {
 
@@ -64,6 +66,10 @@ const MyApp = () => {
               {/* Tour */}
               <Route path="/tour" element={<TourPage></TourPage>}></Route>
               <Route path="/tour-detail" element={<TourDetailPage></TourDetailPage>}></Route>
+
+              {/* Guide */}
+              <Route path="/guide" element={<GuidePage></GuidePage>}></Route>
+              <Route path="/guide-detail" element={<GuideDetailPage></GuideDetailPage>}></Route>
 
               {/* FEEDBACK */}
               <Route path="/feedback" element={<FeedbackPage></FeedbackPage>}></Route>

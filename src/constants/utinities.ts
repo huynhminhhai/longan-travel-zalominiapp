@@ -71,7 +71,7 @@ export const SERVICES: ServicesType[] = [
     },
     {
         label: 'Hướng dẫn viên',
-        url: '/event',
+        url: '/guide',
         icon: images.tourGuide
     },
     
