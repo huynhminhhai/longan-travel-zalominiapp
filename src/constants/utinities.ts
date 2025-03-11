@@ -66,7 +66,7 @@ export const SERVICES: ServicesType[] = [
     },
     {
         label: 'Tour du lịch',
-        url: '/event',
+        url: '/tour',
         icon: images.destination
     },
     {

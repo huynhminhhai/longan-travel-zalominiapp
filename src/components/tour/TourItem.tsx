@@ -1,10 +1,13 @@
 import { Icon } from '@iconify/react'
 import React from 'react'
-import { Box } from 'zmp-ui'
+import { Box, useNavigate } from 'zmp-ui'
 
 const TourItem: React.FC<any> = ({ data }) => {
+
+    const navigate = useNavigate()
+    
     return (
-        <Box className='border-[1px] rounded-lg'>
+        <Box className='border-[1px] rounded-lg' onClick={() => navigate('/tour-detail')}>
             <img className='w-full h-[210px] object-cover rounded-lg' src={data.imgUrl} alt={data.title} />
             <Box px={3} py={4}>
                 <h3 className='text-[16px] font-bold text-[#355933] line-clamp-1 mb-2'>{data.title}</h3>

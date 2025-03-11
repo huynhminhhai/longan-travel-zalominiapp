@@ -17,6 +17,7 @@ import { DestinationTravelDetailPage, DestinationTravelPage } from "pages/destin
 import { CusineDetailPage, CusinePage } from "pages/cusine";
 import { RestaurantDetailPage, RestaurantPage } from "pages/restaurant";
 import { HotelDetailPage, HotelPage } from "pages/hotel";
+import { TourDetailPage, TourPage } from "pages/tour";
 
 const MyApp = () => {
 
@@ -59,6 +60,10 @@ const MyApp = () => {
               {/* HOTEL */}
               <Route path="/hotel" element={<HotelPage></HotelPage>}></Route>
               <Route path="/hotel-detail" element={<HotelDetailPage></HotelDetailPage>}></Route>
+
+              {/* Tour */}
+              <Route path="/tour" element={<TourPage></TourPage>}></Route>
+              <Route path="/tour-detail" element={<TourDetailPage></TourDetailPage>}></Route>
 
               {/* FEEDBACK */}
               <Route path="/feedback" element={<FeedbackPage></FeedbackPage>}></Route>
